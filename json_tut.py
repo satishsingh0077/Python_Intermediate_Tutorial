@@ -12,6 +12,7 @@
 
 
 from asyncore import read
+from code import interact
 import json
 my_dict = {"name":"Satish","city":"magdeburg","is_student":True,"age":28,"work":["kpit","bosch","luxoft"]}
 my_dict1 = {"name":"kumar","city":"magdeburg","is_student":True,"age":28,"work":["zequenses","gi","tempton"]}
@@ -24,11 +25,15 @@ my_json1 = json.dumps(my_dict, indent = 4,separators=('; ', '= '), sort_keys=Tru
 print(my_json1)
 
 # write to a file
-with open('mydata.json','w') as file:
-    json.dump(my_dict, file, indent = 4)
+# note: when writing multiple json strings to a file, it has to be converted to a list first.
+write_list = []
+write_list.append(my_dict)
+write_list.append(my_dict1)
+print("%%%%%%%%%%%%")
+print(write_list)
 
-with open('mydata.json','a') as file:
-    json.dump(my_dict1, file, indent = 4)
+with open('mydata.json','w') as file:
+    json.dump(write_list,file, indent = 4)
 
 # converting data from json object to pyhton dictionary is called deserialization or decoding
 person = json.loads(my_json)

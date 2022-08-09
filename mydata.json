@@ -1,21 +1,24 @@
-{
-    "name": "Satish",
-    "city": "magdeburg",
-    "is_student": true,
-    "age": 28,
-    "work": [
-        "kpit",
-        "bosch",
-        "luxoft"
-    ]
-}{
-    "name": "kumar",
-    "city": "magdeburg",
-    "is_student": true,
-    "age": 28,
-    "work": [
-        "zequenses",
-        "gi",
-        "tempton"
-    ]
-}
+[
+    {
+        "name": "Satish",
+        "city": "magdeburg",
+        "is_student": true,
+        "age": 28,
+        "work": [
+            "kpit",
+            "bosch",
+            "luxoft"
+        ]
+    },
+    {
+        "name": "kumar",
+        "city": "magdeburg",
+        "is_student": true,
+        "age": 28,
+        "work": [
+            "zequenses",
+            "gi",
+            "tempton"
+        ]
+    }
+]
